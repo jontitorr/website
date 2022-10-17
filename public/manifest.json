@@ -1,0 +1,41 @@
+{
+  "lang": "en-US",
+  "short_name": "Xminent",
+  "name": "Xminent | Fullstack Developer",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#171717",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#001dff",
+  "description": "I am a full-stack web developer and a self-taught artist. I love using my skills to create things that are useful and beautiful.",
+  "screenshots": [
+    {
+      "src": "/xminent_1.png",
+      "type": "image/png",
+      "sizes": "1550x914"
+    },
+    {
+      "src": "/xminent_2.png",
+      "type": "image/png",
+      "sizes": "398x807"
+    }
+  ]
+}

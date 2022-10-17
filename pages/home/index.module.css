@@ -1,0 +1,152 @@
+.banner-box .profile-pic {
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 19%), 0 0 15px 0 rgb(238 1 255 / 57%), 0 5px 53px 0 rgb(0 29 255 / 73%);
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-box .profile-pic img {
+  border-radius: 2px;
+  display: block;
+}
+
+.banner-box .content .box .smTitle {
+  /* font-family: "Inter-Medium"; */
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 5px;
+}
+
+.banner-box .content .box .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.section .text-box .text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+
+.about,
+.experience,
+.projects {
+  scroll-margin-top: 100px;
+}
+
+.about h1,
+.experience h1,
+.projects h1 {
+  color: #9cb8f9;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 25px;
+}
+
+.about .about-title {
+  color: #919AA1;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.5rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.about .item {
+  margin-bottom: 60px;
+}
+
+.about .icons {
+  margin-right: 20px;
+}
+
+.about .icons .image-wrapper {
+  width: 40px;
+}
+
+.about .list .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 10 px;
+}
+
+.about .list .listItem {
+  color: #919AA1;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-box .profile-pic {
+    -ms-flex: 0 0 360px;
+    flex: 0 0 360px;
+    width: 360px;
+  }
+
+  .banner-box .content .box .smTitle {
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .banner-box .content .box .title {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+  .section .text-box .text {
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+  }
+
+  .about .about-title {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-bottom: 65px;
+  }
+
+  .about .item {
+    margin-bottom: 0px;
+    min-width: 226px;
+  }
+
+  .about .list .title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .about .list .listItem {
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner-box .profile-pic {
+    -ms-flex: 0 0 460px;
+    flex: 0 0 460px;
+    width: 460px;
+  }
+
+  .banner-box .content .box .title {
+    font-size: 3.75rem;
+    line-height: 5rem;
+  }
+
+  .profile-pic {
+    margin-bottom: 64px;
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner-box .profile-pic {
+    width: 540px;
+  }
+}
