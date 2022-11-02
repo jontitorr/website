@@ -1,9 +1,9 @@
+import Layout from "@/components/Layout";
+import { logger } from "@/lib/logger";
 import { Image } from "@nextui-org/react";
 import NextLink from "next/link";
-import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { logger } from "@/lib/logger";
 
 import styles from "./waifu.module.css";
 

@@ -1,8 +1,8 @@
 import Layout from "@/components/Layout";
+import { Text } from "@nextui-org/react";
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
-import { Text } from "@nextui-org/react";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/blog");

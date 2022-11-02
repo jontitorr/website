@@ -1,10 +1,10 @@
-import Layout from "@/components/Layout";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import { Col, Row, Table, User, Link, Pagination, Loading } from "@nextui-org/react";
-import NextLink from "next/link";
-import { logger } from "@/lib/logger";
 import Input from "@/components/Input";
+import Layout from "@/components/Layout";
+import { logger } from "@/lib/logger";
+import { Col, Link, Loading, Pagination, Row, Table, User } from "@nextui-org/react";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 import type { BrowseSearchResult } from "pages/api/waifus/browse";
 import type { FormElement, NormalColors } from "@nextui-org/react";
@@ -40,7 +40,7 @@ export default function Browse() {
   }, [query]);
 
   useEffect(() => {
-    logger.debug("Browse page loaded.", {currentPage});
+    logger.debug("Browse page loaded.", { currentPage });
 
     setLoading(true);
     fetch(`/api/waifus/browse?page=${currentPage}`)
@@ -60,7 +60,7 @@ export default function Browse() {
 
   const handleWaifuSearch = (e: React.KeyboardEvent<FormElement>) => {
     const { value } = e.target as FormElement;
-    logger.debug({value});
+    logger.debug({ value });
 
     if (!value) {
       return resetPage();
@@ -139,7 +139,9 @@ export default function Browse() {
               </Table.Column>
             )}
           </Table.Header>
-          <Table.Body items={waifuResults.length ? waifuResults.slice((currentPage - 1) * 20, currentPage * 20) : browseResults}>
+          <Table.Body
+            items={waifuResults.length ? waifuResults.slice((currentPage - 1) * 20, currentPage * 20) : browseResults}
+          >
             {(item) => (
               <Table.Row key={item.endpoint}>
                 {(columnKey) => {

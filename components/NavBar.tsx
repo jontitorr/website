@@ -1,24 +1,25 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
-import { Button, Loading, Modal, Navbar, Text, useTheme, Dropdown } from "@nextui-org/react";
-import { useCurrentUser } from "@/lib/user";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
-import ThemeToggle from "./ThemeToggle";
-import { dev, subdomains } from "@/lib/config";
-import toast, { Toaster } from "react-hot-toast";
-import { useApp } from "./App";
-import NextLink from "next/link";
-import Input from "./Input";
-import NextImage from "next/image";
-import NextUILink from "./NextUILink";
-
 import "react-slidedown/lib/slidedown.css";
+
+import { dev, subdomains } from "@/lib/config";
+import { logger } from "@/lib/logger";
+import { useCurrentUser } from "@/lib/user";
+import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button, Dropdown, Loading, Modal, Navbar, Text, useTheme } from "@nextui-org/react";
+import NextImage from "next/image";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
+import React, { useEffect, useRef, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+
+import { useApp } from "./App";
+import Input from "./Input";
+import NextUILink from "./NextUILink";
+import ThemeToggle from "./ThemeToggle";
 
 import type { Link as NavLink } from "./App";
 import type { FormElement } from "@nextui-org/react";
 import type { WaifuSearchResult } from "@/types/waifu";
-import { logger } from "@/lib/logger";
 
 // This error prop will contain a toggle field, so that even if the ACTUAL contained value is the same, our object will be different, thus allowing useEffect to trigger.
 export interface NavBarError {

@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import { logger } from "@/lib/logger";
+import { faHeart, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Badge, Card, Grid, Row, Text } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Card, Grid, Text, Row, Badge } from "@nextui-org/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import type { Series as SeriesData, SeriesWaifu } from "@/lib/api";
 

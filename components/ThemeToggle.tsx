@@ -1,7 +1,7 @@
-import { useTheme as useNextTheme } from "next-themes";
-import { Switch, useTheme } from "@nextui-org/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Switch, useTheme } from "@nextui-org/react";
+import { useTheme as useNextTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {

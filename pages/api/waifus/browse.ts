@@ -1,7 +1,7 @@
+import { apiLimiter } from "@/lib/api";
 import db, { Waifu } from "@/lib/api/database";
 import { auths, checkAuthenticated } from "@/lib/auth";
 import nextConnect from "next-connect";
-import { apiLimiter } from "@/lib/api";
 
 import type { NextApiRequest, NextApiResponse } from "next";
 import type { WaifuSearchResult } from "@/types/waifu";

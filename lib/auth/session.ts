@@ -1,8 +1,8 @@
 import db from "@/lib/api/database";
+import { dev } from "@/lib/config";
 import MongoStore from "connect-mongo";
 import nextSession from "next-session";
 import { promisifyStore } from "next-session/lib/compat";
-import { dev } from "@/lib/config";
 
 if (!process.env.DB_NAME) {
   throw new Error("Please add your database name to .env");

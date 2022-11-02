@@ -1,15 +1,14 @@
 import { useApp } from "@/components/App";
 import Layout from "@/components/Layout";
-import { useRef } from "react";
-import NextLink from "next/link";
+import { useCurrentUser } from "@/lib/user";
 import { Image } from "@nextui-org/react";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
+import { useRef } from "react";
 
 import styles from "../login/login.module.css";
 
 import type { FormEvent } from "react";
-import { useRouter } from "next/router";
-import { useCurrentUser } from "@/lib/user";
-
 export default function SignUp() {
   const signUpForm = useRef<HTMLFormElement | null>(null);
   const { setError } = useApp();

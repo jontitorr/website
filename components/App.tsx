@@ -1,10 +1,11 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import Footer from "./Footer";
-import NavBar, { NavBarError } from "./NavBar";
-import AuthProvider from "./AuthProvider";
-import AuthGuard from "./AuthGuard";
 import { logger } from "@/lib/logger";
 import { useRouter } from "next/router";
+import { createContext, useContext, useEffect, useState } from "react";
+
+import AuthGuard from "./AuthGuard";
+import AuthProvider from "./AuthProvider";
+import Footer from "./Footer";
+import NavBar, { NavBarError } from "./NavBar";
 
 import type { Dispatch, SetStateAction } from "react";
 

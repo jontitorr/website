@@ -1,5 +1,5 @@
-import nextConnect from "next-connect";
 import { auths } from "@/lib/auth";
+import nextConnect from "next-connect";
 
 import type { Request, Response } from "express";
 

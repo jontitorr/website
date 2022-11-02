@@ -1,12 +1,12 @@
-import nextConnect from "next-connect";
 import db from "@/lib/api/database";
 import { auths } from "@/lib/auth";
 import { checkAuthenticated, checkNotAuthenticated } from "@/lib/auth/middleware";
+import { logger } from "@/lib/logger";
 import bcrypt from "bcryptjs";
+import nextConnect from "next-connect";
 
 import type { Request } from "express";
 import type { NextApiResponse } from "next";
-import { logger } from "@/lib/logger";
 
 const handler = nextConnect<Request, NextApiResponse>();
 

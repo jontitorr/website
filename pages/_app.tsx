@@ -1,18 +1,17 @@
-import { createTheme, NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { Workbox } from "workbox-window";
-import { useEffect } from "react";
-import Head from "next/head";
-import { dev } from "@/lib/config";
-
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
-
-import ActualApp from "@/components/App";
-
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/globals.css";
 import "@/styles/main.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+import ActualApp from "@/components/App";
+import { dev } from "@/lib/config";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { createTheme, NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import Head from "next/head";
+import { useEffect } from "react";
+import { Workbox } from "workbox-window";
+
+config.autoAddCss = false;
 
 import type { AppProps } from "next/app";
 

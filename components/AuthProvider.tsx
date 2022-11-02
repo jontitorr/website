@@ -1,5 +1,5 @@
-import { useEffect, useState, createContext, useContext } from "react";
 import { useCurrentUser } from "@/lib/user";
+import { createContext, useContext, useEffect, useState } from "react";
 
 import type { Dispatch, SetStateAction } from "react";
 

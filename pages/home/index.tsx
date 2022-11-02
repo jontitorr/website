@@ -1,12 +1,12 @@
-import Head from "next/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Layout from "@/components/Layout";
+import { logger } from "@/lib/logger";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Text, Image } from "@nextui-org/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Image, Text } from "@nextui-org/react";
+import Head from "next/head";
 import NextLink from "next/link";
 import { useEffect, useRef } from "react";
-import Layout from "@/components/Layout";
 import Typed from "typed.js";
-import { logger } from "@/lib/logger";
 
 import styles from "./index.module.css";
 

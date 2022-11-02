@@ -3,6 +3,7 @@ import { Loading } from "@nextui-org/react";
 import { useAuth } from "components/AuthProvider";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+
 import Layout from "./Layout";
 
 interface AuthGuardProps {
