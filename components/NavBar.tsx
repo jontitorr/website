@@ -335,6 +335,8 @@ export default function NavBar({ error, links }: NavBarProps) {
         return color;
       };
 
+      const hostUrl = dev ? "http://localhost:3000" : `https://${host}`;
+
       return (
         showResults &&
         !waifusLoading &&
@@ -349,7 +351,7 @@ export default function NavBar({ error, links }: NavBarProps) {
                   icon={<FontAwesomeIcon icon={faUser} style={{ color: randomColor() }} />}
                   textValue={waifu.name}
                 >
-                  <NextLink href={`${host}${waifu.endpoint}`}>{waifu.name}</NextLink>
+                  <NextLink href={`${hostUrl}${waifu.endpoint}`}>{waifu.name}</NextLink>
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
