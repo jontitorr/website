@@ -148,11 +148,10 @@ export default function Home() {
             <div className="flex flex-wrap">
               <div className={`${styles["text-box"]} flex relative mb-0 md:mb-16`}>
                 <p className={styles.text}>
-                  Hi I&apos;m Xminent — a self taught &amp; self taught programmer from Chicago. I initially started
-                  learning to code out of boredom, but now I do a mix of everything from programming things such as
-                  Discord bots to making scripts that improve my daily life. I feel like I&apos;ve learned so much
-                  throughout my time coding and I&apos;ve only just started, but I&apos;m excited to see what I can do
-                  for the community.
+                  Hi, I&apos;m Xminent — a self-taught programmer from Chicago. I initially started learning to code out
+                  of boredom, but now I do a mix of everything from programming things such as Discord bots to making
+                  scripts that improve my daily life. I feel like I&apos;ve learned so much throughout my time coding
+                  and I&apos;ve only just started, but I&apos;m excited to see what I can do for the community.
                 </p>
               </div>
             </div>
