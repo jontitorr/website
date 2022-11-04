@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { logger } from "@/lib/logger";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Image, Text } from "@nextui-org/react";
 import Head from "next/head";
@@ -10,18 +11,20 @@ import Typed from "typed.js";
 
 import styles from "./index.module.css";
 
-const projects = [
+interface ProjectItem {
+  href: string;
+  label: string;
+  description: string;
+  github?: boolean;
+  internet?: boolean;
+}
+
+const projects: ProjectItem[] = [
   {
     href: "https://github.com/xminent/ekisocket",
     label: "Ekisocket",
-    description: "A small network library written for use with my library Ekizu.",
-    github: true,
-  },
-  {
-    href: "https://github.com/xminent/ekizu",
-    label: "Ekizu",
     description:
-      "A Discord API wrapper written in C++ for use in creating Discord applications. It is very similar to Discord.js, as it was my library of choice for making my Discord bots.",
+      "A small network library written for use with my library Ekizu, featuring simple clients for the various internet protocols such as TCP/UDP, HTTP(s), and WebSockets.",
     github: true,
   },
   {
@@ -32,18 +35,24 @@ const projects = [
     github: true,
   },
   {
-    href: "https://github.com/xminent/king",
+    href: "https://tinyurl.com/kingdiscordbot",
     label: "King",
     description:
-      "A Discord bot written in Typescript using Discord.js. This bot is filled with a lot of features including a custom command system with Slash Commands supported, a music bot, moderation bot, and many more fun commands and features which are made possible due to the multiple APIs being used.",
-    github: true,
+      "A Discord bot written in Typescript using Discord.js. This bot is filled with a lot of features including a custom command system with Slash Commands supported, a music bot, moderation bot, and many more fun commands and features which are made possible due to the multiple APIs being used. To see all the features, add the bot to your server and use the help command",
+    internet: true,
   },
   {
     href: "/",
     label: "This website 😲",
     description:
       'This website was made using Next.js, NextUI, TailwindCSS, and many more technologies. By incorporating multiple features such as Authentication, Page Routing, and a rate-limited API, I was able to create a website that seems professional. In addition, this application was designed to serve multiple subdomains, which can allow me to serve multiple websites on a single domain. You can find my blog using the subdomain "blog".',
-    github: false,
+  },
+  {
+    href: "https://github.com/xminent/ytunes",
+    label: "YTunes",
+    description:
+      "An Alexa skill that allows you to play music from YouTube. Features a player that allows you to play, pause, skip, and queue songs. This skill is currently in development.",
+    github: true,
   },
 ];
 
@@ -100,6 +109,12 @@ export default function Home() {
               {project.github && (
                 <a className="text-white" href={project.href} aria-label={`See more about ${project.label} on GitHub`}>
                   <FontAwesomeIcon className="mt-4 md:mt-0" icon={faGithub} size={"2xl"} />
+                </a>
+              )}
+
+              {project.internet && (
+                <a className="text-white" href={project.href} aria-label={`See more about ${project.label}`}>
+                  <FontAwesomeIcon className="mt-4 md:mt-0" icon={faGlobe} size={"2xl"} />
                 </a>
               )}
             </div>
