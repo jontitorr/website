@@ -35,7 +35,7 @@
     "next-session": "^4.0.5",
     "next-themes": "^0.2.0",
     "next-with-workbox": "^3.0.3",
-    "passport": "^0.5.3",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "rate-limit-mongo": "^2.3.2",
     "react": "^17.0.2",
