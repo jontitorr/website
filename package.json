@@ -29,7 +29,7 @@
     "fuzzball": "^2.1.2",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
-    "mongodb": "^4.9.1",
+    "mongodb": "^4.17.0",
     "next": "^12.2.2",
     "next-connect": "^0.13.0",
     "next-session": "^4.0.5",
